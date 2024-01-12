@@ -1,0 +1,11 @@
+Model Information:
+* title:	Banana Peel
+* source:	https://sketchfab.com/3d-models/banana-peel-6837ff9043d94451926b22987f3dacde
+* author:	House Doctor (https://sketchfab.com/chin4grci4)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Banana Peel" (https://sketchfab.com/3d-models/banana-peel-6837ff9043d94451926b22987f3dacde) by House Doctor (https://sketchfab.com/chin4grci4) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

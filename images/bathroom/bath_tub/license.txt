@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bath Tub
+* source:	https://sketchfab.com/3d-models/bath-tub-c0b8d2762a224fcf81dc182af1bc46cb
+* author:	ShadowCoffee (https://sketchfab.com/ShadowCoffee)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bath Tub" (https://sketchfab.com/3d-models/bath-tub-c0b8d2762a224fcf81dc182af1bc46cb) by ShadowCoffee (https://sketchfab.com/ShadowCoffee) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

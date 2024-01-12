@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+        <!-- load in the p5 core library -->
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+
+		<!-- A-Frame core library -->
+		<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+		<!-- AFrameP5 library -->
+		<script src="https://craignyu.github.io/aframep5/libraries/aframep5-v2.2.js"></script>
+
+		<!-- Your p5 Sketch -->
+		<script src="sketch.js"></script>
+
+		<style>
+			#inventory {
+				position: relative;
+				display: block;
+				margin: auto;
+				top: 50%;
+				/* bottom: 20px; */
+				/* left: 45%; */
+				width: 150px;
+				height: 150px;
+				z-index: 10000;
+				background-color: aqua;
+				border: 5px solid black;
+				border-radius: 15px;
+			}
+
+			#instruction {
+				position: absolute;
+				z-index: 1000;
+				display: block;
+				margin: auto;
+				left: 15%;
+				top: 10%;
+				background-color: cadetblue;
+				opacity: 0.8;
+				padding: 10px;
+				color: antiquewhite;
+				border-radius: 20px;
+			}
+
+			#level1_success {
+				position: relative;
+				z-index: 10000;
+				display: block;
+				margin: auto;
+				text-align: center;
+				top: 20%;
+				font-size: 1.5em;
+				background-color: cadetblue;
+				color: aquamarine;
+				opacity: 0.8;
+				max-width: 60%;
+				padding: 20px;
+				border-radius: 20px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div id="instruction">
+			<h1>Tidy-Up!</h1>
+			<h2>Game Instruction</h2>
+			<p>Put the things back to where they belonged to!</p>
+			<p>Check the checklist on the wall to learn your task for the level.</p>
+			<p>Click to pick up an item. Then click on one of the yellow spots to put the item there.</p>
+			<p>When you finish all tasks, hit enter to enter the next level.</p>
+			<p>There are 3 levels in total. Enjoy the game!</p>
+			<h2>Hit [SPACE] to hide instructions</h2>
+		</div>
+
+		<div id="level1_success">
+			<h1>You did it!</h1>
+			<h2 id="subtitle">Hit [SPACE] to proceed to Level 2</h2>
+		</div>
+
+		<div id="inventory">
+			<img id="inventory_image" src="images/emptyInventory.png">
+		</div>
+
+		
+
+		<!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->
+	    <a-scene id="VRScene">
+
+	    	<!--
+		       The 'a-assets' container is used to load in any external artwork you may want to use as "textures" for your objects. Ensure that this element has an ID of 'VRAssets'
+
+		       Textures can be loaded by creating a new 'a-asset' tag inside of the 'a-assets' container.
+		       When doing this you will need to make sure to give your textures a unique ID -
+		       this will be used by p5 to create new objects.
+
+		       Example:
+
+		       <img id="ITEM_ID_GOES_HERE" src="images/gold_block.png">
+				-->
+
+				<a-assets id="VRAssets">
+					<img src="images/planks.png" id="planks">
+					<img src="images/wall.png" id="wall">
+					<img src="images/bedroomWall.png" id="bed_wall">
+					<img src="images/kit_wall.png" id="kit_wall">
+					<a-asset-item src="images/desk/desk.gltf" id="desk_gltf"></a-asset-item>
+					<a-asset-item src="images/bed/bed.gltf" id="bed_gltf"></a-asset-item>
+					<a-asset-item src="images/closet/closet.gltf" id="closet_gltf"></a-asset-item>
+					<a-asset-item src="images/long_scissors/scene.gltf" id="scissors_gltf"></a-asset-item>
+					<a-asset-item src="images/tshirt/scene.gltf" id="tshirt_gltf"></a-asset-item>
+					<a-asset-item src="images/chair/scene.gltf" id="chair_gltf"></a-asset-item>
+
+					<a-asset-item src="images/bathroom/basic_wood_shelf/scene.gltf" id="woodShelf_gltf"></a-asset-item>
+					<a-asset-item src="images/bathroom/bath_tub/scene.gltf" id="bathtub_gltf"></a-asset-item>
+					<a-asset-item src="images/bathroom/sink/scene.gltf" id="sink_gltf"></a-asset-item>
+					<a-asset-item src="images/bathroom/toilet/scene.gltf" id="toilet_gltf"></a-asset-item>
+					<a-asset-item src="images/bathroom/sonic_care_electric_tooth_brush/scene.gltf" id="toothbrush_gltf"></a-asset-item>
+					<a-asset-item src="images/bathroom/white_towel/scene.gltf" id="towel_gltf"></a-asset-item>
+					<a-asset-item src="images/bathroom/colgate_toothpaste_tube/scene.gltf" id="toothpaste_gltf"></a-asset-item>
+					<a-asset-item src="images/bathroom/shampoo_product_design/scene.gltf" id="shampoo_gltf"></a-asset-item>
+
+					<img src="images/kitchen/floor.png" id="kitFloor">
+					<a-asset-item src="images/kitchen/dish/scene.gltf" id="dish_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/banana/scene.gltf" id="banana_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/paper/scene.gltf" id="paper_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/toaster/scene.gltf" id="toaster_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/soup/scene.gltf" id="soup_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/steel_pot/scene.gltf" id="pot_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/fridge/scene.gltf" id="fridge_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/microwave/scene.gltf" id="microwave_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/table/scene.gltf" id="table_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/kitchen_setting/scene.gltf" id="kitSet_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/stove/scene.gltf" id="stove_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/trashCan/scene.gltf" id="trashc_gltf"></a-asset-item>
+					<a-asset-item src="images/kitchen/shiba/scene.gltf" id="shiba_gltf"></a-asset-item>
+				</a-assets>
+
+	    </a-scene>
+
+	</body>
+</html>

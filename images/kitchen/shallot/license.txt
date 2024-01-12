@@ -1,0 +1,11 @@
+Model Information:
+* title:	That's shallot!
+* source:	https://sketchfab.com/3d-models/thats-shallot-b297cfe6b95240ecb4b8599dcd6b29ec
+* author:	hfenton (https://sketchfab.com/hfenton)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "That's shallot!" (https://sketchfab.com/3d-models/thats-shallot-b297cfe6b95240ecb4b8599dcd6b29ec) by hfenton (https://sketchfab.com/hfenton) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

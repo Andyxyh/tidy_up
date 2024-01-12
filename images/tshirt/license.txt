@@ -1,0 +1,11 @@
+Model Information:
+* title:	T-shirt - Lengan Pendek
+* source:	https://sketchfab.com/3d-models/t-shirt-lengan-pendek-0f7c1ad13f114f2b9da596641bb47fa7
+* author:	Ikal.Ichwan (https://sketchfab.com/Ikal.Ichwan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "T-shirt - Lengan Pendek" (https://sketchfab.com/3d-models/t-shirt-lengan-pendek-0f7c1ad13f114f2b9da596641bb47fa7) by Ikal.Ichwan (https://sketchfab.com/Ikal.Ichwan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

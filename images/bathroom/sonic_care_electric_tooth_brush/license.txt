@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sonic Care Electric Tooth Brush
+* source:	https://sketchfab.com/3d-models/sonic-care-electric-tooth-brush-74a54eea8293455baf97a25f7eb88cd0
+* author:	Marc Sawyer (https://sketchfab.com/whitewashstudio)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sonic Care Electric Tooth Brush" (https://sketchfab.com/3d-models/sonic-care-electric-tooth-brush-74a54eea8293455baf97a25f7eb88cd0) by Marc Sawyer (https://sketchfab.com/whitewashstudio) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
